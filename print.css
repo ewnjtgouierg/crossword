@@ -1,0 +1,51 @@
+body
+	{
+		position: relative;
+	}
+div
+	{
+		float: none !important;
+	}
+.cr-left,.cr-right
+	{
+		width: auto !important;
+	}
+table
+	{
+		border-collapse: collapse;
+		table-layout: fixed;
+	}
+td
+	{
+		width: 26px; height: 26px; font-size: 11px; vertical-align: top; border: 1px solid gray !important;
+	}
+tr:not(:first-child)>td
+	{
+		border-top: none !important;
+	}
+td:not(:first-child)
+	{
+		border-left: none !important;
+	}
+td[gap]
+	{
+		background: #f0f0f0;
+	}
+[page1]
+	{
+		columns: 2;
+	}
+#ans
+	{
+		page-break-before: always;
+		position: relative;
+	}
+@media print
+	{
+		#ans
+			{
+				page-break-before: always;
+				position: relative;
+				display: initial !important;
+			}
+	}
