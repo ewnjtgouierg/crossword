@@ -1,7 +1,7 @@
 body
 	{
-		/*font-size: 12px;*/
-		/*font-family: arial;*/
+		font-size: 11px;
+		font-family: arial;
 	}
 div
 	{
@@ -18,10 +18,10 @@ table
 	}
 td
 	{
-		width: 17px;
-		min-width: 17px;
-		height: 17px;
-		font-size: 10px;
+		width: 26px;
+		min-width: 26px;
+		height: 26px;
+		font-size: 11px;
 		vertical-align: top;
 		border: 1px solid gray !important;
 	}
