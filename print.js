@@ -37,7 +37,7 @@ document.addEventListener('keyup', function(e) {
 		html += "</table><br><br>";
 		html += document.querySelectorAll('.cr-left')[1].outerHTML
 				+ "<br>" + document.querySelectorAll('.cr-right')[1].outerHTML
-				+ "</div>"
+				+ "</div><div class='page-break'></div><b>Ответы</b><br>"
 				+ document.querySelector('#ans').outerHTML;
 		document.body.innerHTML = html;
 	});

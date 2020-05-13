@@ -22,5 +22,7 @@ var loadStyle = function(url)
 loadScript(chrome.runtime.getURL('print.js'));
 document.addEventListener('keyup', function(e) {
 	if (e.key == 'Enter' && e.ctrlKey) {} else return;
+	for (var tag of ['style','script','link'])
+		for (var el of Array.from(document.querySelectorAll(tag))) el.remove();
 	loadStyle(chrome.runtime.getURL('print.css'));
 		});

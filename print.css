@@ -1,6 +1,7 @@
 body
 	{
-		position: relative;
+		/*font-size: 12px;*/
+		/*font-family: arial;*/
 	}
 div
 	{
@@ -17,9 +18,10 @@ table
 	}
 td
 	{
-		width: 26px;
-		height: 26px;
-		font-size: 11px;
+		width: 17px;
+		min-width: 17px;
+		height: 17px;
+		font-size: 10px;
 		vertical-align: top;
 		border: 1px solid gray !important;
 	}
@@ -38,19 +40,21 @@ td[gap]
 	}
 [page1]
 	{
-		columns: 2;
-	}
-#ans
-	{
-		page-break-before: always;
-		position: relative;
+		column-count: 2;
 	}
 @media print
 	{
+		*
+			{
+				float: none !important;
+			}
 		#ans
 			{
-				page-break-before: always;
-				position: relative;
 				display: initial !important;
+			}
+		.page-break
+			{
+				break-before: always;
+				page-break-before: always;
 			}
 	}
