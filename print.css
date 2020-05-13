@@ -17,7 +17,11 @@ table
 	}
 td
 	{
-		width: 26px; height: 26px; font-size: 11px; vertical-align: top; border: 1px solid gray !important;
+		width: 26px;
+		height: 26px;
+		font-size: 11px;
+		vertical-align: top;
+		border: 1px solid gray !important;
 	}
 tr:not(:first-child)>td
 	{
@@ -30,6 +34,7 @@ td:not(:first-child)
 td[gap]
 	{
 		background: #f0f0f0;
+		-webkit-print-color-adjust: exact;
 	}
 [page1]
 	{
